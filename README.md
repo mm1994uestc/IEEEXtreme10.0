@@ -1,5 +1,5 @@
 ##*IEEEXtreme10.0
-![Icon](https://cl.ly/1R230m2V2T3h/PID_Log-1.png =50x50)
+![icon](https://cl.ly/0e3w0s3D3A1C/IEEEXtreme.png)
 ####Finish Que step by step
 ##*Basic Informations:
 ####That's my first time to participate the Algorithm Competition,very exciting!Actully i find some problems within the IEEEXtreme competition,You must keep your mind focus on the questions,it's really important for you to solve them.If nowtime,You are tired,i suggest you to have a break or snap.Within the resting time,You need to review some question you have not solved before,maybe there are some other ways to answer the question.Another important experience is "Just let it go!",That's means when u are try the question with none ways,maybe it's time for u to let the question go away if there is other questions comes to you!
