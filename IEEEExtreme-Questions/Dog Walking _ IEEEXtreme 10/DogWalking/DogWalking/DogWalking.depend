@@ -1,0 +1,8 @@
+# depslib dependency file v1.0
+1477112399 source:c:\users\administrator\desktop\competation\dogwalking\dogwalking\main.c
+	<stdio.h>
+	<stdlib.h>
+
+1477103717 source:c:\users\administrator\desktop\competation\dogwalking\dogwalking\test.c
+	<stdio.h>
+
