@@ -1,0 +1,6 @@
+# depslib dependency file v1.0
+1477399569 source:g:\algorithmsdevelopment\ieeextreme10.0\testloop\main.c
+	<stdio.h>
+	<stdlib.h>
+	<math.h>
+

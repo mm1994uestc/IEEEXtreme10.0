@@ -1,0 +1,6 @@
+# depslib dependency file v1.0
+1477395413 source:g:\algorithmsdevelopment\ieeextreme10.0\ieeeextreme-questions\full adder _ ieeextreme 10\fulladder\fulladder\main.c
+	<stdio.h>
+	<stdlib.h>
+	<math.h>
+
