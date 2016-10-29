@@ -89,7 +89,8 @@ int main()
     int n=0;
     while(SumTemp>0)//calculate the bit of a number
     {
-        SumTemp/=10;
+        //SumTemp/=10;
+        SumTemp/=Basic_Wei;
         n++;
     }
     //printf("%d\n",n);//
