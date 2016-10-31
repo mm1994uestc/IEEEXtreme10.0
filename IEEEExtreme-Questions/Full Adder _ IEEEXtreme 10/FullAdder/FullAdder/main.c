@@ -7,11 +7,22 @@
   ing.I thank that may be the integer is too small to storage
   the number calculated in the program.So I will try to
   modify this later.  Time:20161025  Edited by:Miao Ma.
+14 qc765OZLev8SIB
+ IZvOOL76qL5S8SS8
++    O8qZeB6IBS68
+-----------------
+ IZvOS67vvZe88vcZ
+10 wj8Ma04HJg
+    H
++8J4J
+-----
+ 8JH0
 ********************************************************/
 #include <stdio.h>
 #include <stdlib.h>
 #include <math.h>
 
+double MyPow_double(double Num,int N);
 int getline_ex(char s[],int lim);
 int MyPow(int Basic,int N);
 int main()
@@ -59,38 +70,38 @@ int main()
     free(String2);//Just use to get the input string!
 
     int N1_bit=len1-flag1;
-    long Num1=0;//Notice the Num1's init value.
+    double Num1=0.0;//Notice the Num1's init value.
     for(j=0;j<N1_bit;j++)//change the number into Decimal type!
     {
         for(i=0;i<Basic_Wei-1;i++)//
         {
             if(*(Plus1+j)==*(Symbol+i)) break;//
         }
-        Num1+=i*MyPow(Basic_Wei,N1_bit-j-1);//calculate the first decimal.
+        Num1+=(double)(i*MyPow_double(Basic_Wei,N1_bit-j-1));//calculate the first decimal.
     }
     free(Plus1);
 
     int N2_bit=len2-flag2-1;
-    long Num2=0;//Notice the Num2's init value.
+    double Num2=0.0;//Notice the Num2's init value.
     for(j=0;j<N2_bit;j++)//change the number into Decimal type!
     {
         for(i=0;i<Basic_Wei-1;i++)//
         {
             if(*(Plus2+j)==*(Symbol+i)) break;
         }
-        Num2+=i*MyPow(Basic_Wei,N2_bit-j-1);//calculate the second decimal.
+        Num2+=(double)(i*MyPow_double(Basic_Wei,N2_bit-j-1));//calculate the second decimal.
     }
     free(Plus2);
-    long sum=Num1+Num2;
+    double sum=Num1+Num2;
     //printf("%d\n",sum);
 
     //char Str[20];
-    long SumTemp=sum;
+    double SumTemp=sum;
     int n=0;
     while(SumTemp>0)//calculate the bit of a number
     {
         //SumTemp/=10;
-        SumTemp/=Basic_Wei;
+        SumTemp=floor(SumTemp/Basic_Wei);
         n++;
     }
     //printf("%d\n",n);//
@@ -99,11 +110,14 @@ int main()
     printf("%s\n",Plus2_Out); free(Plus2_Out);
     printf("%s\n",String1); free(String1);
     printf(" ");
-    long B=0;
+    int B=0;
+    printf("The Num1 is :%20.20e\n",Num1);
+    printf("The Num2 is :%20.20e\n",Num2);
+    printf("The sum is :%20.20e\n",sum);
     for(i=0;i<n;i++)
     {
-        B=sum/MyPow(Basic_Wei,n-i-1);
-        sum-=B*MyPow(Basic_Wei,n-i-1);
+        B=(int)(sum/MyPow_double(Basic_Wei,n-i-1));
+        sum-=B*MyPow_double(Basic_Wei,n-i-1);
         //printf("Now,The Res of B:%d\n",B);
         //Str[i]=*(Symbol+B);
         printf("%c",*(Symbol+B));
@@ -132,6 +146,16 @@ int MyPow(int Basic,int N)
     for(i=0;i<N;i++)
     {
         Res*=Basic;
+    }
+    return Res;
+}
+double MyPow_double(double Num,int N)
+{
+    double Res=1.0;
+    int i=0;
+    for(i=0;i<N;i++)
+    {
+        Res*=Num;
     }
     return Res;
 }
