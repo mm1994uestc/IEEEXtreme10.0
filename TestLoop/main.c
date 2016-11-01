@@ -135,6 +135,17 @@ int main()
 
     printf("%f\n",B);
     printf("%f\n",12*B); */
+    char T;
+    scanf("%c",&T);
+    printf("%c",T);
+    if(T=='y')
+    {
+        printf("OK!");
+    }
+    else
+    {
+        printf("Sorry!");
+    }
     return 0;
 }
 int MyPow(int Basic,int N)
