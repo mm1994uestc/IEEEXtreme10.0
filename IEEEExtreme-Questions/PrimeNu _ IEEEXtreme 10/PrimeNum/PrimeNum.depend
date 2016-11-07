@@ -1,0 +1,10 @@
+# depslib dependency file v1.0
+1478534521 source:d:\ieeextreme10\ieeextreme10.0\ieeeextreme-questions\primenu _ ieeextreme 10\primenum\main.c
+	<stdio.h>
+	<stdlib.h>
+	<math.h>
+	<time.h>
+	<dos.h>
+	<conio.h>
+	<windows.h>
+
