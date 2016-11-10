@@ -1,0 +1,6 @@
+# depslib dependency file v1.0
+1478789590 source:d:\ieeextreme10\ieeextreme10.0\somecoderelated\numextract\main.c
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+

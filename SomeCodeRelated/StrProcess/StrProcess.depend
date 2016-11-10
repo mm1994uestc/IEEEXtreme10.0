@@ -1,0 +1,5 @@
+# depslib dependency file v1.0
+1478792401 source:d:\ieeextreme10\ieeextreme10.0\somecoderelated\strprocess\main.c
+	<stdio.h>
+	<stdlib.h>
+

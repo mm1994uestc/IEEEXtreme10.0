@@ -1,0 +1,6 @@
+# depslib dependency file v1.0
+1478784496 source:d:\ieeextreme10\ieeextreme10.0\somecoderelated\circlein\main.c
+	<stdio.h>
+	<stdlib.h>
+	<math.h>
+
