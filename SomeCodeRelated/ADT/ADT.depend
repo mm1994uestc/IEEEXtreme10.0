@@ -1,0 +1,14 @@
+# depslib dependency file v1.0
+1480072742 source:d:\ieeextreme10\ieeextreme10.0\somecoderelated\adt\main.c
+	<stdio.h>
+	<stdlib.h>
+	"mystack.h"
+
+1480068804 d:\ieeextreme10\ieeextreme10.0\somecoderelated\adt\mystack.h
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+
+1480070816 source:d:\ieeextreme10\ieeextreme10.0\somecoderelated\adt\mystack.c
+	"mystack.h"
+
